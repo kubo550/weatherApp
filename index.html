@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="master.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app">
+      <div id="clock" >00:00 </div>
+      <div id="err" class="hidden">Przepraszamy! Spróbuj ponownie.</div>
+      <div class="info">
+          <h3> <i class="fa fa-map-pin"> </i> <span id="city">Krakow </span></h3>
+          <i class="fa fa-table"></i> <span id="date">00.00.2020</span>
+      </div>
+      <div class="opis_div">
+        <h1 id="temp">16°</h1>
+        <p> <i class="fa fa-thermometer"></i> <span id="min"> min</span>/<span id="max">max</span> Odczuwalna: <span id="odczuwalna">0°</span> </p>
+        <p> <i class="fa fa-cloud"> </i> <span id="clouds"> 0/100 </span> </p>
+        <p> <i class="fa fa-globe"> </i> <span id="opis"> loading... </span> </p>
+      </div>
+      <div class="options">
+        <input id="input" type="text" value="Krakow">
+        <button id="btn" type="button"> Przejdz</button>
+      </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
